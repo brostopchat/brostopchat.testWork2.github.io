@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Обнуление стилей*/
+/*Null style*/
 * {
     padding: 0;
     margin: 0;
@@ -74,22 +74,22 @@ h1, h2, h3, h4, h5, h6 {
 /*----------------------------*/
 
 .header {
-    position: fixed;
     background: #FFFFFF;
     box-shadow: 0px 4px 12px rgba(18, 33, 63, 0.05);
+    position: relative;
     height: 104px;
-    width: 100%;
-    display: flex;
+    display: block;
 }
 
 .headerContent{
-    margin-left: 50px;
+    margin-left: 250px;
     flex: 1 1 auto;
 }
 
-/*--------Логотип------------*/
+/*--------Logo------------*/
 .logo {
     padding: 30px 40px 0 40px;
+    position: absolute;
 }
 
 .logoBox {
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #2C9323;
 }
 
-/*--------Вернее меню хедера------------*/
+/*--------Top menu header------------*/
 .headerTop {
     display: flex;
     justify-content: space-between;
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 14px;
 }
 
-/*--------Нижнее меню хедера------------*/
+/*--------Bottom menu header------------*/
 .headerBottom {
     display: flex;
     justify-content: space-between;
@@ -216,4 +216,287 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12px;
     line-height: 14px;
     color: #FFFFFF;
+}
+
+/*--------Content------------*/
+
+.content {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.container {
+    display: block;
+    margin: 0 250px;
+}
+
+.contentBoxTop {
+    margin-top: 100px;
+    display: inline-flex;
+}
+
+.contentBoxBottom {
+    margin-top: 37px;
+    width: 1420px;
+    position: relative;
+}
+
+.productBox {
+    display: inline-flex;
+}
+
+.product {
+    width: 240px;
+    margin: 0 15px;
+    overflow: auto;
+}
+
+/*------------Scroll button style-------------*/
+.scrollButton {
+    width: 32px;
+    height: 32px;
+    margin: 120px 0 0 3px;
+    background: #E0E0E0;
+    border-radius: 3px;
+}
+
+.left {
+    transform: rotate(180deg);
+    margin-left: 0px;
+    margin-right: 3px;
+}
+
+/*------------Product card top styles---------*/
+.productPreview {
+    padding: 28px 30px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    position: relative;
+}
+
+.productImage {
+    height: 200px;
+    width: 184px;
+}
+
+.productAbout {
+    position: relative;
+}
+
+.productSale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 0 0 22px;
+}
+
+.discount {
+    background-color: #E95471;
+    border-radius: 3px;
+}
+
+.saleElement {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 4px 6px;
+    margin-bottom: 9px;
+}
+
+/*-----------Product card bottom styles---------*/
+.productName {
+    margin-top: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #202454;
+    display: inline-block;
+}
+
+.productRating {
+    margin-top: 27px;
+    align-items: center;
+    display: flex;
+}
+
+.ratingStar {
+    display: inline-flex;
+}
+
+.star {
+    height: 14px;
+    width: 14px;
+}
+
+.votesCount {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #202454;
+}
+
+.productPrice {
+    margin-top: 16px;
+}
+
+.fullPrice {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 140%;
+    text-decoration-line: line-through;
+    color: #7B94B0;
+}
+
+.salePrice {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #202454;
+}
+
+.refresh {
+    margin-top: 4px;
+}
+
+.refreshPriceButton {
+    background-color: #E95471;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding-top: 1px;
+    padding-left: 2px;
+}
+
+.refreshImage {
+    height: 14px;
+    width: 14px;
+    color: #fff;
+}
+
+.refreshPrice {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #7B94B0;
+}
+
+.buy {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0px 2px 6px rgba(84, 143, 199, 0.2);
+}
+
+.buyImage {
+    width: 21px;
+    height: 20px;
+}
+
+/*--------Bottom content------------*/
+.navigateScroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: inline-flex;
+    margin-left: 682px;
+}
+
+.navigateScrollButton {
+    width: 8px;
+    height: 8px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.activeScroll {
+    background: #245420;
+}
+
+/*------------Content footer--------------*/
+.contentFooter {
+    position: relative;
+}
+
+.cFContainer {
+    width: 100%;
+    height: 180px;
+    background-color: #026C00;
+    margin-top: 180px;
+    opacity: 0.1;
+}
+
+.doggo {
+    position: absolute;
+    width: 266px;
+    height: 260px;
+    left: 0;
+    top: -77px;
+    margin-left: 491px;
+}
+
+.adText {
+    position: absolute;
+    width: 542px;
+    height: 46px;
+    margin-left: 859px;
+    margin-top: 32px;
+    left: 0;
+    top: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #202454;
+}
+
+.registry {
+    position: absolute;
+    width: 225px;
+    height: 48px;
+    margin-left: 1018px;
+    margin-top: 100px;
+    left: 0;
+    top: 0;
+    background-color: #E77E42;
+    border-radius: 3px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/*--------Футер------------*/
+
+.footer {
+    height: 319px;
+    width: 100%;
+    background-color: #245420;
+    position: relative;
+    bottom: 0;
 }
