@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
 }
 
-/*-----------------*/
+/*----------------------------*/
 
 .header {
     position: fixed;
@@ -83,13 +83,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .headerContent{
-    margin-left: 90px;
+    margin-left: 50px;
     flex: 1 1 auto;
 }
 
 /*--------Логотип------------*/
 .logo {
-    padding: 30px 0 0 40px;
+    padding: 30px 40px 0 40px;
 }
 
 .logoBox {
@@ -167,6 +167,10 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-flex;
 }
 
+.buttonMenu {
+    display: inline-flex;
+}
+
 .bigText {
     display: inline-block;
     margin-right: 40px;
@@ -176,4 +180,40 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 21px;
     color: #202454;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    margin-left: 10px;
+}
+
+.counter {
+    position: relative;
+    padding-right: 14px;
+    width: 44px;
+}
+
+.iconSize {
+    height: 27px;
+    width: 25px;
+}
+
+.productCounter {
+    position: absolute;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    background-color: #E77E42;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
 }
