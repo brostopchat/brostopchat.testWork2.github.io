@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*Обнуление стилей*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*-----------------*/
+
+.header {
+    position: fixed;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(18, 33, 63, 0.05);
+    height: 104px;
+    width: 100%;
+    display: flex;
+}
+
+.headerContent{
+    margin-left: 90px;
+    flex: 1 1 auto;
+}
+
+/*--------Логотип------------*/
+.logo {
+    padding: 30px 0 0 40px;
+}
+
+.logoBox {
+    display: inline-flex;
+}
+
+.logoDown {
+    transform: rotate(-45deg);
+}
+
+.logoUp {
+    transform: rotate(45deg);
+}
+
+.logoElement {
+    height: 40px;
+    width: 11px;
+    margin-left: 11px;
+    border-radius: 5px;
+    background: #2C9323;
+}
+
+/*--------Вернее меню хедера------------*/
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 40px 0 0;
+}
+
+.smallMenu {
+    display: inline-flex;
+}
+
+.smallText {
+    display: inline-block;
+    margin-right: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7B94B0;
+}
+
+.languageButton {
+    background-color: #fff;
+    padding: 3px;
+    color: #7B94B0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.active {
+    background: #F4F5F8;
+    border-radius: 3px;
+    color: #202454;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/*--------Нижнее меню хедера------------*/
+.headerBottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 29px 40px 0 0;
+}
+
+.bigMenu {
+    display: inline-flex;
+}
+
+.bigText {
+    display: inline-block;
+    margin-right: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #202454;
+}
