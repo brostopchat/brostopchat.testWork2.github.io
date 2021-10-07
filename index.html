@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
     <!-----Шрифты------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,10 +62,10 @@
 
     <!--Content-->
     <content class="content">
-        <container class="container">
-            
+        
+            <div class="contentBox container">
                 <div class="contentBoxTop">
-                    <button class="scrollButton left"></button>
+                    <button class="scrollButton left">></button>
                     <div class="productBox">
                         <div class="product">
                             <div class="productPreview">
@@ -203,7 +203,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="product">
+                        <div class="product five">
                             <div class="productPreview">
                                 <img class="productImage" src="https://shop.purina.ru/media/catalog/product/cache/19/image/600x/a4e40ebdc3e371adff845072e1c73f37/7/6/7613035642843_1_1.jpg" alt="">
                                 <div class="productSale">
@@ -238,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="scrollButton"></button>
+                    <button class="scrollButton">></button>
                 </div>
                 <div class="contentBoxBottom">
                     <div class="navigateScroll">
@@ -248,56 +248,62 @@
                         <button class="navigateScrollButton"></button>
                     </div>
                 </div>
-            
-        </container>
+            </div>
+        
         <div class="contentFooter">
             <div class="cFContainer"></div>
-            <img class="doggo" src="./images/dog.svg" alt="">
-            <span class="adText">Специальные предложения для зарегистрированных пользователей</span>
-            <button class="registry">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            <div class="contentFooterBox">
+                <img class="doggo" src="./images/dog.svg" alt="">
+                <div class="contentFooterFlex">
+                    <span class="adText">Специальные предложения для зарегистрированных пользователей</span>
+                    <button class="registry">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
         </div>
     </content>
 
     <!--Footer-->
     <footer class="footer">
-        <div class="footerContent container">
-            <div class="footerLogo 1_Colum">
-                <div class="logoBox">
-                    <div class="logoDown logoElement"></div>
-                    <div class="logoUp logoElement"></div>
-                    <div class="logoDown logoElement"></div>
-                    <div class="logoUp logoElement"></div>
+        <div class="footerFlexBox container">
+            <div class="footerContent">
+                <div class="footerLogo 1_Colum">
+                    <div class="logoBox">
+                        <div class="logoDown logoElement"></div>
+                        <div class="logoUp logoElement"></div>
+                        <div class="logoDown logoElement"></div>
+                        <div class="logoUp logoElement"></div>
+                    </div>
+                </div>
+                <div class="2_Colum">
+                    <h1>Блок 1</h1>
+                    <a href="#" class="liStyle">Ссылка 1</a>
+                    <a href="#" class="liStyle">Ссылка 2</a>
+                    <a href="#" class="liStyle">Длинная ссылка 3</a>
+                    <a href="#" class="liStyle">Ссылка 4</a>
+                </div>
+                <div class="3_Colum">
+                    <h1>Блок 2</h1>
+                    <a href="#" class="liStyle">Ссылка 1</a>
+                    <a href="#" class="liStyle">Ссылка 2</a>
+                    <a href="#" class="liStyle">Длинная ссылка 3</a>
+                    <a href="#" class="liStyle">Ссылка 4</a>
+                </div>
+                <div class="4_Colum">
+                    <h1>Блок 3</h1>
+                    <a href="#" class="liStyle">Ссылка 1</a>
+                    <a href="#" class="liStyle">Длинная ссылка 3</a>
+                </div>
+                <div class="5_Colum">
+                    <span class="upButtonText">Вверх</span>
+                    <button class="upButton">^</button>
                 </div>
             </div>
-            <div class="2_Colum">
-                <h1>Блок 1</h1>
-                <a href="#" class="liStyle">Ссылка 1</a>
-                <a href="#" class="liStyle">Ссылка 2</a>
-                <a href="#" class="liStyle">Длинная ссылка 3</a>
-                <a href="#" class="liStyle">Ссылка 4</a>
-            </div>
-            <div class="3_Colum">
-                <h1>Блок 2</h1>
-                <a href="#" class="liStyle">Ссылка 1</a>
-                <a href="#" class="liStyle">Ссылка 2</a>
-                <a href="#" class="liStyle">Длинная ссылка 3</a>
-                <a href="#" class="liStyle">Ссылка 4</a>
-            </div>
-            <div class="4_Colum">
-                <h1>Блок 3</h1>
-                <a href="#" class="liStyle">Ссылка 1</a>
-                <a href="#" class="liStyle">Длинная ссылка 3</a>
-            </div>
-            <div class="5_Colum">
-                <span class="upButtonText">Вверх</span>
-                <button class="upButton">^</button>
-            </div>
-        </div>
-        <div class="footerLine container"></div>
-        <div class="footerAbout container">
-            <span class="footerSmallText">© 2021 Тестовое задание</span>
-            <div>
-                <span class="footerSmallText">Разработано в </span><span class="footerBigText">WEZOM</span>
+            <div class="footerLine"></div>
+            <div class="footerAbout">
+                <span class="footerSmallText">© 2021 Тестовое задание</span>
+                <div>
+                    <span class="footerSmallText">Разработано в </span><span class="footerBigText">WEZOM</span>
+                </div>
             </div>
         </div>
     </footer>

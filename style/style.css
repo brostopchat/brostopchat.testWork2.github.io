@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*----------------------------*/
 
+/*----------------Header----------------*/
 .header {
     background: #FFFFFF;
     box-shadow: 0px 4px 12px rgba(18, 33, 63, 0.05);
@@ -227,8 +228,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    display: inline-block;
     margin: 0 250px;
+}
+
+.contentBox {
+    max-width: 1420px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contentBoxTop {
@@ -238,8 +244,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .contentBoxBottom {
     margin-top: 37px;
-    width: 1420px;
     position: relative;
+    align-self: center;
 }
 
 .productBox {
@@ -259,6 +265,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 120px 0 0 3px;
     background: #E0E0E0;
     border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .left {
@@ -413,11 +426,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------Bottom content------------*/
 .navigateScroll {
-    position: absolute;
-    left: 0;
-    right: 0;
     display: inline-flex;
-    margin-left: 682px;
 }
 
 .navigateScrollButton {
@@ -437,6 +446,12 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
+.contentFooterBox {
+    position: absolute;
+    top: -77px;
+    left: 491px;
+}
+
 .cFContainer {
     width: 100%;
     height: 180px;
@@ -445,23 +460,21 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.4;
 }
 
+.contentFooterFlex {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 109px;
+    margin-left: 102px;
+}
+
 .doggo {
-    position: absolute;
     width: 266px;
     height: 260px;
-    left: 0;
-    top: -77px;
-    margin-left: 491px;
 }
 
 .adText {
-    position: absolute;
     width: 542px;
     height: 46px;
-    margin-left: 859px;
-    margin-top: 32px;
-    left: 0;
-    top: 0;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -469,16 +482,14 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 28px;
     text-align: center;
     color: #202454;
+    display: inline-block;
 }
 
 .registry {
-    position: absolute;
+    margin-top: 24px;
+    align-self: center;
     width: 225px;
     height: 48px;
-    margin-left: 1018px;
-    margin-top: 100px;
-    left: 0;
-    top: 0;
     background-color: #E77E42;
     border-radius: 3px;
     font-family: Roboto Condensed;
@@ -500,6 +511,11 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
 }
 
+.footerFlexBox {
+    display: flex;
+    flex-direction: column;
+}
+
 .footerContent {
     padding-top: 56px;
     display: flex;
@@ -509,9 +525,9 @@ h1, h2, h3, h4, h5, h6 {
 .upButton {
     width: 48px;
     height: 48px;
-    background: #FFFFFF;
-    opacity: 0.2;
-    color: #000;
+    background: #678d64;
+    padding-top: 5px;
+    color: #FFFFFF;
     font-size: 36px;
     border-radius: 50%;
     vertical-align: middle;
@@ -553,9 +569,9 @@ h1 {
 
 /*----------Footer bottom-----------*/
 .footerLine {
-    width: 1420px;
-    margin-top: 47px;
-    border-top: 1px solid #FFFFFF;
+    width: 100%;
+    padding: 47px 0 0 0;
+    border-bottom: 1px solid #FFFFFF;
     opacity: 0.2;
 }
 
@@ -563,6 +579,7 @@ h1 {
     padding-top: 26px;
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 .footerSmallText {
@@ -584,4 +601,106 @@ h1 {
     text-align: right;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+}
+
+/*----------------Media get--------------*/
+@media (max-width: 1750px){
+    .five {
+        display: none;
+    }
+    
+    .contentBoxTop {
+        max-width: 1150px;
+    }
+
+    .contentFooterBox {
+        left: 250px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .container {
+        margin: 0 100px;
+    }
+
+    .contentFooterBox {
+        left: 100px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .productBox {
+        flex-wrap: wrap;
+    }
+
+    .product {
+        margin: 25px 50px 25px 50px
+    }
+
+    .contentBoxTop {
+        max-width: 751px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .cFContainer {
+        margin-top: 20px;
+    }
+
+    .scrollButton {
+        margin-top: 0;
+        align-self: center;
+    }
+}
+
+@media (max-width: 1080px) {
+    .headerContent {
+        margin-left: 170px;
+    }
+
+    .contentFooterFlex {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 950px) {
+    .contentBoxTop {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .footerLogo {
+        display: none;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .productImage {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .doggo {
+        display: none;
+    }
+
+    .bigText {
+        display: none;
+    }
+
+    .container {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .contentFooter {
+        display: none;
+    }
+    
+    .footer {
+        margin-top: 20px;
+    }
 }
